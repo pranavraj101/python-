@@ -1,0 +1,10 @@
+n=int(input())
+ls=input()
+l=ls.split(' ')
+l.sort()
+x=str(l[n-1])
+m=l.count(x)
+for i in range(0,m):
+        l.remove(x)
+n=len(l)
+print(l[n-1])
